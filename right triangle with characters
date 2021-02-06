@@ -1,0 +1,29 @@
+#Name: Oluwakemi LaBadie
+#Student Number: 0000248
+# Write a program names program43.py that uses nested loops to generate a triangle
+#the program should begin by the user to enter the number of lines in a triangle
+
+#Start Program
+#Prompt user to input number of rows
+#Prompt user to input type of character for triangle output
+#Print first line of program output
+#Get for in range conditions
+#print output
+
+
+
+
+#start Program
+rows = int(input("Please Enter the Total Number of Rows  : "))
+ch = input("Please Enter any Character  : ")
+
+print("Reverse Mirrored Right Triangle Star Pattern") 
+for i in range(1, rows + 1):
+    for j in range(1, rows + 1):
+        if(j < i):
+            print(' ', end = '  ')
+        else:
+            print('%c' %ch, end = '  ')
+    print()
+    
+#End Program
